@@ -11,19 +11,18 @@
   <header class="site-header">
     <div class="container nav-wrap">
       <a href="index.html" class="brand">
-  <img src="img/logo.png" alt="Ltecobilke" class="brand-logo">
+        <img src="img/logo.png" alt="Ltecobike" class="brand-logo">
+        <div class="brand-text">
+          <span class="brand-name">Ltecobike</span>
+          <span class="brand-slogan">Movilidad eléctrica</span>
+        </div>
+      </a>
 
-  <div class="brand-text">
-    <span class="brand-name">Ltecobike</span>
-    <span class="brand-slogan">Movilidad eléctrica</span>
-  </div>
-</a>
-
-      <button class="menu-toggle" id="menuToggle">☰</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
 
       <nav class="main-nav" id="mainNav">
         <a href="index.html">Inicio</a>
-        <a href="modelos.html">Modelos</a>
+        <a href="modelos.html" class="active">Modelos</a>
         <a href="nosotros.html">Nosotros</a>
         <a href="contacto.html">Contacto</a>
       </nav>
@@ -33,7 +32,7 @@
   <section class="page-hero">
     <div class="container">
       <h1>Nuestros modelos</h1>
-      <p>Conocé algunas de las motos eléctricas de Ltecobike.</p>
+      <p>Recorré los modelos, mirá distintas fotos y conocé sus características principales.</p>
     </div>
   </section>
 
@@ -42,8 +41,7 @@
       <div class="carousel-section-header">
         <div>
           <h2>Modelos disponibles</h2>
-          <p class="section-intro">Recorré las tarjetas con flechas o tocando los puntos. El carrusel avanza solo y vuelve al inicio al llegar al final.</p>
-          <p class="gallery-helper">Cada tarjeta tiene su propia galería de fotos para mostrar distintas vistas del mismo modelo.</p>
+          <p class="section-intro">Recorré los modelos, mirá distintas fotos y conocé sus características principales. Si querés más información, podés escribirnos por WhatsApp o Instagram.</p>
         </div>
 
         <div class="carousel-controls" aria-label="Controles del carrusel de modelos">
@@ -56,77 +54,88 @@
         <div class="carousel-track">
           <article class="card large-card carousel-card">
             <div class="card-gallery" data-gallery data-autoplay="true">
-            <div class="card-gallery-track">
-              <!-- Para agregar más fotos de esta moto, duplicá una línea img.card-gallery-slide y cambiá la ruta -->
-              <img class="card-gallery-slide" src="img/q8-350-roja.jpeg" alt="Modelo Q8-350W color rojo vista principal" />
-              <img class="card-gallery-slide" src="img/q8-350-beige-rojo.png" alt="Modelo Q8-350W segunda vista" />
+              <div class="card-gallery-track">
+                <img class="card-gallery-slide" src="img/q8-350-rosa.png" alt="Modelo Q8-350W vista principal" />
+                <img class="card-gallery-slide" src="img/q8-350-beige-rojo.png" alt="Modelo Q8-350W segunda vista" />
+              </div>
+              <button class="card-gallery-btn prev" type="button" data-gallery-prev aria-label="Foto anterior de la Q8-350W">‹</button>
+              <button class="card-gallery-btn next" type="button" data-gallery-next aria-label="Foto siguiente de la Q8-350W">›</button>
+              <div class="card-gallery-dots" data-gallery-dots aria-label="Indicadores de fotos de la Q8-350W"></div>
             </div>
-            <button class="card-gallery-btn prev" type="button" data-gallery-prev aria-label="Foto anterior de la Q8-350W roja">‹</button>
-            <button class="card-gallery-btn next" type="button" data-gallery-next aria-label="Foto siguiente de la Q8-350W roja">›</button>
-            <div class="card-gallery-dots" data-gallery-dots aria-label="Indicadores de fotos de la Q8-350W roja"></div>
-          </div>
             <div class="card-body">
               <span class="tag">Q8-350W</span>
               <h3>Q8-350W</h3>
-              <p>Modelo con motor 350W, autonomía estimada de hasta 45 km y freno delantero a disco.</p>
+              <p>Modelo con motor de 350W, velocidad máxima de 30 km/h y batería de 48V. Cuenta con freno delantero a disco, freno trasero a tambor y una configuración pensada para un uso urbano práctico y cómodo.</p>
               <ul class="spec-list">
-                <li>Velocidad máx.: 45 km/h</li>
-                <li>Autonomía: 45 km</li>
+                <li>Velocidad máxima: 30 km/h</li>
                 <li>Motor: 350W</li>
-                <li>Carga: 5 a 6 hs</li>
-                <li>Frenos: disco</li>
+                <li>Batería: 48-12 / 48-20 plomo-ácido</li>
+                <li>Frenos: disco delantero y tambor trasero</li>
+                <li>Neumáticos: 10-250</li>
+                <li>Carga estimada: 4 a 8 hs</li>
+                <li>Ascenso: 30°</li>
+                <li>Arranque: llave + alarma remota</li>
               </ul>
-              <a class="btn" target="_blank" href="https://wa.me/59892000086?text=Hola%2C%20quiero%20consultar%20por%20la%20Q8-350W">Consultar</a>
+              <p class="spec-note">Consultanos por más fotos, detalles del modelo y disponibilidad.</p>
+              <a class="btn" target="_blank" href="https://wa.me/59892000086?text=Hola%2C%20quiero%20consultar%20por%20la%20Q8-350W">Consultar por WhatsApp</a>
             </div>
           </article>
 
           <article class="card large-card carousel-card">
             <div class="card-gallery" data-gallery data-autoplay="true">
-            <div class="card-gallery-track">
-              <img class="card-gallery-slide" src="img/q8-350-rosa.png" alt="Modelo Q8-350W color rosa vista principal" />
-              <img class="card-gallery-slide" src="img/q8-350-beige-rojo.png" alt="Modelo Q8-350W color rosa segunda vista" />
+              <div class="card-gallery-track">
+                <img class="card-gallery-slide" src="img/q8-350-roja.jpeg" alt="Modelo Q8-500W vista principal" />
+                <img class="card-gallery-slide" src="img/q8-350-beige-rojo.png" alt="Modelo Q8-500W segunda vista" />
+              </div>
+              <button class="card-gallery-btn prev" type="button" data-gallery-prev aria-label="Foto anterior de la Q8-500W">‹</button>
+              <button class="card-gallery-btn next" type="button" data-gallery-next aria-label="Foto siguiente de la Q8-500W">›</button>
+              <div class="card-gallery-dots" data-gallery-dots aria-label="Indicadores de fotos de la Q8-500W"></div>
             </div>
-            <button class="card-gallery-btn prev" type="button" data-gallery-prev aria-label="Foto anterior de la Q8-350W rosa">‹</button>
-            <button class="card-gallery-btn next" type="button" data-gallery-next aria-label="Foto siguiente de la Q8-350W rosa">›</button>
-            <div class="card-gallery-dots" data-gallery-dots aria-label="Indicadores de fotos de la Q8-350W rosa"></div>
-          </div>
             <div class="card-body">
-              <span class="tag">Q8-350W</span>
-              <h3>Q8-350W</h3>
-              <p>Modelo con gran identidad visual, motor 350W y una propuesta ideal para ciudad.</p>
+              <span class="tag">Q8-500W</span>
+              <h3>Q8-500W</h3>
+              <p>Modelo con motor de 500W, velocidad máxima de 30 km/h y batería de 48V. Tiene freno delantero a disco, freno trasero a tambor y una propuesta ideal para quienes buscan una línea urbana con más potencia.</p>
               <ul class="spec-list">
-                <li>Velocidad máx.: 45 km/h</li>
-                <li>Autonomía: 45 km</li>
-                <li>Motor: 350W</li>
-                <li>Carga: 5 a 6 hs</li>
-                <li>Frenos: tambor</li>
+                <li>Velocidad máxima: 30 km/h</li>
+                <li>Motor: 500W</li>
+                <li>Batería: 48-12 / 48-20 plomo-ácido</li>
+                <li>Frenos: disco delantero y tambor trasero</li>
+                <li>Neumáticos: 10-275</li>
+                <li>Carga estimada: 4 a 8 hs</li>
+                <li>Ascenso: 30°</li>
+                <li>Arranque: llave + alarma remota</li>
               </ul>
-              <a class="btn" target="_blank" href="https://wa.me/59892000086?text=Hola%2C%20quiero%20consultar%20por%20la%20Q8-350W">Consultar</a>
+              <p class="spec-note">Escribinos para pedir más información, otras vistas y consultas del modelo.</p>
+              <a class="btn" target="_blank" href="https://wa.me/59892000086?text=Hola%2C%20quiero%20consultar%20por%20la%20Q8-500W">Consultar por WhatsApp</a>
             </div>
           </article>
 
           <article class="card large-card carousel-card">
             <div class="card-gallery" data-gallery data-autoplay="true">
-            <div class="card-gallery-track">
-              <img class="card-gallery-slide" src="img/sl-500-beige.jpeg" alt="Modelo SL-500 color beige vista principal" />
-              <img class="card-gallery-slide" src="img/logoFondo.jpeg" alt="Modelo SL-500 en exposición" />
+              <div class="card-gallery-track">
+                <img class="card-gallery-slide" src="img/sl-500-beige.jpeg" alt="Modelo LY-500W vista principal" />
+                <img class="card-gallery-slide" src="img/logoFondo.jpeg" alt="Modelo LY-500W en exposición" />
+              </div>
+              <button class="card-gallery-btn prev" type="button" data-gallery-prev aria-label="Foto anterior de la LY-500W">‹</button>
+              <button class="card-gallery-btn next" type="button" data-gallery-next aria-label="Foto siguiente de la LY-500W">›</button>
+              <div class="card-gallery-dots" data-gallery-dots aria-label="Indicadores de fotos de la LY-500W"></div>
             </div>
-            <button class="card-gallery-btn prev" type="button" data-gallery-prev aria-label="Foto anterior de la SL-500">‹</button>
-            <button class="card-gallery-btn next" type="button" data-gallery-next aria-label="Foto siguiente de la SL-500">›</button>
-            <div class="card-gallery-dots" data-gallery-dots aria-label="Indicadores de fotos de la SL-500"></div>
-          </div>
             <div class="card-body">
-              <span class="tag">SL-500</span>
-              <h3>SL-500</h3>
-              <p>Una línea estética elegante, cómoda y con mucha presencia visual.</p>
+              <span class="tag">LY-500W</span>
+              <h3>LY-500W</h3>
+              <p>Modelo con motor de 500W, velocidad máxima de 30 km/h y batería de 48V. Incorpora freno delantero a disco, freno trasero a tambor y una configuración pensada para acompañar la movilidad diaria con estilo y practicidad.</p>
               <ul class="spec-list">
-                <li>100% eléctrico</li>
-                <li>Cero emisiones</li>
-                <li>3 velocidades</li>
-                <li>Alarma de seguridad</li>
-                <li>Hasta 100 kg</li>
+                <li>Velocidad máxima: 30 km/h</li>
+                <li>Motor: 500W</li>
+                <li>Batería: 48-12 / 48-20 plomo-ácido</li>
+                <li>Frenos: disco delantero y tambor trasero</li>
+                <li>Neumáticos: 10-275</li>
+                <li>Carga estimada: 4 a 8 hs</li>
+                <li>Ascenso: 30°</li>
+                <li>Arranque: llave + alarma remota</li>
               </ul>
-              <a class="btn" target="_blank" href="https://wa.me/59892000086?text=Hola%2C%20quiero%20consultar%20por%20el%20modelo%20SL-500">Consultar</a>
+              <p class="spec-note">Consultanos por fotos, detalles y disponibilidad de este modelo.</p>
+              <a class="btn" target="_blank" href="https://wa.me/59892000086?text=Hola%2C%20quiero%20consultar%20por%20la%20LY-500W">Consultar por WhatsApp</a>
             </div>
           </article>
         </div>
@@ -136,15 +145,58 @@
     </div>
   </section>
 
-  <section class="section">
-  <div class="container">
-    <div class="cta-box cta-strong">
-      <h2>Consultá disponibilidad ahora</h2>
-      <p>Te respondemos rápido por WhatsApp.</p>
-      <a href="https://wa.me/59892000086" class="btn">Hablar por WhatsApp</a>
+  <section class="section section-dark">
+    <div class="container">
+      <span class="section-kicker light">Preguntas frecuentes</span>
+      <h2>Lo que más nos consultan</h2>
+      <p class="section-intro">Si querés ver más fotos o resolver dudas puntuales, también podés escribirnos directo.</p>
+
+      <div class="feature-grid faq-grid">
+        <article class="feature-box faq-item">
+          <h3>¿Puedo pedir más fotos?</h3>
+          <p>Sí. Podés escribirnos por WhatsApp o Instagram y te mostramos más imágenes y detalles del modelo que te interese.</p>
+        </article>
+
+        <article class="feature-box faq-item">
+          <h3>¿Puedo consultar disponibilidad?</h3>
+          <p>Sí. Escribinos y te respondemos de forma directa para ayudarte con la consulta.</p>
+        </article>
+
+        <article class="feature-box faq-item">
+          <h3>¿Qué tipo de batería usan?</h3>
+          <p>Los modelos mostrados trabajan con batería de 48V, con variantes 48-12 o 48-20 de plomo-ácido según el modelo.</p>
+        </article>
+
+        <article class="feature-box faq-item">
+          <h3>¿Cuánto demora la carga?</h3>
+          <p>La carga estimada es de aproximadamente 4 a 8 horas.</p>
+        </article>
+
+        <article class="feature-box faq-item">
+          <h3>¿Puedo escribirles por Instagram?</h3>
+          <p>Sí. También respondemos por Instagram y te ayudamos con fotos, detalles y consultas.</p>
+        </article>
+
+        <article class="feature-box faq-item">
+          <h3>¿Qué frenos tienen?</h3>
+          <p>Los modelos mostrados cuentan con freno delantero a disco y freno trasero a tambor.</p>
+        </article>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-box cta-strong">
+        <h2>¿Querés más información de un modelo?</h2>
+        <p>Escribinos por WhatsApp o seguinos en Instagram para ver más fotos, hacer consultas y conocer mejor cada opción.</p>
+        <div class="hero-actions" style="margin-top: 20px;">
+          <a href="https://wa.me/59892000086" class="btn" target="_blank">Hablar por WhatsApp</a>
+          <a href="https://instagram.com/ltecobike" class="btn btn-outline" target="_blank">Ver Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer class="site-footer">
     <div class="container footer-wrap">

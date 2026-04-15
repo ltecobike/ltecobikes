@@ -2,8 +2,28 @@ const menuToggle = document.getElementById("menuToggle");
 const mainNav = document.getElementById("mainNav");
 
 if (menuToggle && mainNav) {
-  menuToggle.addEventListener("click", () => {
-    mainNav.classList.toggle("active");
+  const toggleMenu = () => {
+    const isOpen = mainNav.classList.toggle("active");
+    menuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  };
+
+  menuToggle.addEventListener("click", toggleMenu);
+
+  mainNav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      mainNav.classList.remove("active");
+      menuToggle.setAttribute("aria-expanded", "false");
+    });
+  });
+
+  document.addEventListener("click", (event) => {
+    const clickedInsideMenu = mainNav.contains(event.target);
+    const clickedToggle = menuToggle.contains(event.target);
+
+    if (!clickedInsideMenu && !clickedToggle) {
+      mainNav.classList.remove("active");
+      menuToggle.setAttribute("aria-expanded", "false");
+    }
   });
 }
 

@@ -48,6 +48,8 @@ a {
   background: var(--green-dark);
   border-top: 6px solid var(--sand);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+  z-index: 1000;
 }
 
 .nav-wrap {
@@ -56,6 +58,7 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  position: relative;
 }
 
 .brand {
@@ -111,6 +114,9 @@ a {
   color: white;
   font-size: 28px;
   cursor: pointer;
+  position: relative;
+  z-index: 1002;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* HERO */
@@ -387,6 +393,22 @@ a {
   border: 1px solid #d7c8af;
   box-shadow: var(--shadow);
   overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.14);
+  border-color: var(--sand);
+  background: #fcf8f1;
+}
+
+.card-body h3 {
+  transition: color 0.25s ease;
+}
+
+.card:hover .card-body h3 {
+  color: var(--green-dark);
 }
 
 .card img {
@@ -401,6 +423,7 @@ a {
 
 .card-body {
   padding: 22px;
+  
 }
 
 .card-body h3 {
@@ -558,7 +581,7 @@ a {
 
   .main-nav {
     position: absolute;
-    top: 108px;
+    top: calc(100% + 1px);
     left: 0;
     right: 0;
     background: var(--green-dark);
@@ -567,10 +590,17 @@ a {
     flex-direction: column;
     align-items: flex-start;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 14px 24px rgba(0, 0, 0, 0.18);
+    z-index: 1001;
   }
 
   .main-nav.active {
     display: flex;
+  }
+
+  .main-nav a {
+    width: 100%;
+    padding: 10px 0;
   }
 
   .hero {
@@ -857,4 +887,25 @@ a {
     height: 36px;
     font-size: 24px;
   }
+}
+
+
+.main-nav a.active {
+  color: #f4e4c7;
+}
+
+.spec-note {
+  color: var(--green-dark);
+  font-weight: 700;
+  margin: 10px 0 18px;
+}
+
+.faq-grid .feature-box {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.16);
+}
+
+.faq-grid .feature-box h3,
+.faq-grid .feature-box p {
+  color: white;
 }
